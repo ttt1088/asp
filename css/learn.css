@@ -1,0 +1,214 @@
+﻿#learn {
+    height:300px;
+    margin-top:80px;
+    margin-left:20px;
+    width:700px;
+}
+#learnse {
+    
+    float:left;
+    top:80px;
+    right:0;
+    width:550px;
+    height:290px;
+    position:absolute;
+}
+#marquee{
+    
+	position:relative;
+	width:700px;
+	height:290px;
+	overflow:hidden;
+}
+
+ul {
+	position:absolute;
+	height:290px;
+	margin:0;
+	padding:0px;
+}
+ul li{
+	list-style:none;
+	float:left;
+	width:700px;
+	height:290px;
+}
+
+
+#marquee .pre-next {
+	position: absolute;
+	top: 95px;
+	width: 45px;
+	height: 100px;
+	background: url(../img/sprite.png) no-repeat 0 0;
+	cursor: pointer;
+}
+#marquee .pre {
+	left: 0;
+}
+#marquee .next {
+	right: 0;
+	background-position: right top;
+}
+#marquee .btn-bground {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 700px;
+	height: 20px;
+	background-color: #000000;
+}
+#marquee .btn {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 700px;
+	height: 10px;
+	padding: 5px 0;
+	text-align: right;
+}
+#marquee .btn span {
+	display: inline-block;
+	width: 25px;
+	height: 10px;
+	margin-right: 10px;
+	background-color: #ffffff;
+	cursor: pointer;
+}
+
+/*例句*/
+
+.seimg {
+    display:none;
+}
+
+.main *{
+	/* Universal CSS reset */
+	margin:0;
+	padding:0;
+}
+
+
+
+.slideOutTip{
+	/* The main wrapping div of the slideout tips */
+	position:absolute;
+	padding:3px;
+	top:0;
+	left:0;
+	background-color:rgba(128, 128, 128, 0.4);
+	font-size:x-large;
+	color:rgb(27,106,147);
+	overflow:hidden;
+	height:22px;
+}
+
+
+
+/* The holder for the title and the icon: */
+.tipVisible{ cursor:pointer; height:22px; }
+
+.tipTitle{
+	float:left;
+	font-family:'Myriad Pro',Arial, Helvetica, sans-serif;
+	font-size:15px;
+	font-weight:bold;
+	white-space:nowrap;
+	line-height:22px;
+	padding-right:5px;
+}
+
+.tipIcon{
+	width:20px;
+	height:20px;
+	float:left;
+	background-color:#61b035;
+	border:1px solid #70c244;
+	margin-right:8px;
+	
+	/* CSS3 Rounded corners */
+	
+	-moz-border-radius:1px;
+	-webkit-border-radius:1px;
+	border-radius:1px;
+}
+
+/* color themes */
+.green .tipIcon{ background-color:#61b035; border:1px solid #70c244; }
+
+
+.plusIcon{
+	/* The plus icon */
+	width:13px;
+	height:13px;
+	background:url('../img/plus.gif') no-repeat center center;
+	margin:4px;
+	
+	/* Defining a CSS3 animation. Currently only works in Chrome and Safari */
+	-webkit-transition: -webkit-transform 0.2s linear;
+	-moz-transition: -moz-transform 0.2s linear;
+	transition: transform 0.2s linear;
+}
+
+.slideOutTip.isOpened{ z-index:10000; }
+
+.slideOutTip.isOpened .plusIcon{
+	/* Applying a CSS3 rotation  to the opened slideouts*/
+	-moz-transform:rotate(45deg);
+	-webkit-transform:rotate(45deg);
+	transform:rotate(45deg);
+}
+
+/* Special rules for the left and top - opening versions */
+
+.openLeft .tipIcon{
+	/* Floating the title and the icon to the right */
+	margin:0 0 0 8px;
+	float:right;
+}
+.openLeft .tipTitle{ float:right; padding:0 0 0 5px; }
+.openLeft .slideOutContent{ margin-top:22px; }
+.openLeft.openTop .slideOutContent{	margin-top:0; }
+
+
+.slideOutContent{
+	/* Hiding the div with the slide out content: */
+	display:none;
+	padding:10px;
+	font-size:25px;
+    font-family:'Comic Sans MS';
+    width:500px;
+    height:240px;
+}
+
+/* Hiding the original paragraphs if they have not been replaced (JS disabled): */
+
+.main > p{ display:none; }
+
+
+
+/* The styles below are only necessary for the styling of the demo page: */
+
+.main{
+	height:200px;
+	position:relative;
+	width:550px;
+}
+
+.spaceBottom{
+	margin:0 0 10px;
+}
+
+.spaceTop{
+	margin:10px 0 0;
+}
+
+.clear{
+	clear:both;
+}
+
+p.tutInfo{
+	font-family:"Myriad Pro",Arial,Helvetica,sans-serif;
+}
+
+/*例句完*/

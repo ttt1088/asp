@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" type="text/css" href="./css/1.css"/>
+</head>
+<body>
+<div id="container">
+    <div id="title">
+	    <div id="login">
+    	    <a href="#">Login登录</a>
+            |
+            <a href="#">Join us注册</a>
+        </div>
+        <div id="logo"><a href="Default.aspx">
+            <asp:Image ID="Image1" runat="server" ImageUrl="~/img/logo.png" /></a></div>
+        <div id="search">
+    	    <input type="textarea" id="sousuokuang"/>
+            <a href="#" id="sousuo">search搜索</a>
+        </div>   
+    </div>
+
+    
+    <form id="form1" runat="server">
+        <div id="neirong">
+        
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    
+    <div id="footer"></div>
+</div>
+
+
+
+
+</body>
+</html>
