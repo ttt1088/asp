@@ -9,6 +9,18 @@
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+<style>
+
+body > #container {
+    height: auto; 
+    min-height: 600px;          /*页面高度*/
+}
+div#container {
+    position:absolute;
+    height:100%;
+    width:100%;
+}
+</style>
     <div id="learn">
 	<div id="marquee">
 	
@@ -31,7 +43,7 @@
     <div id="learnse">
         <div class="main">
             
-        <p class="se" title="A New Tutorial Every Week" >
+        <p class="se" title="Example Sentence例句" >
             <asp:Image ID="Image6" runat="server" ImageUrl="~/img/se-01.jpg" CssClass="seimg"/>
             <asp:Image ID="Image7" runat="server" ImageUrl="~/img/se-02.jpg" CssClass="seimg"/>
             <asp:Image ID="Image8" runat="server" ImageUrl="~/img/se-03.jpg" CssClass="seimg"/>
@@ -49,7 +61,7 @@
         var len = $("#marquee ul li").length;
         var timer = null;
         var aaa = "<div class='btn-bground'></div><div class='btn'>";
-
+        $('.tipIcon').trigger('click');
         $("#marquee ul li").each(function () {
             aaa += "<span></span>";
         });
@@ -116,11 +128,10 @@
         //}
     });
     function sentence(index) {
-        var sss = "#ContentPlaceHolder1_Image" + (index + 6).toString();
+        var ni = "#ContentPlaceHolder1_Image" + (index + 6).toString();
         $(".seimg").css("display", "none");
-        $(sss).css("display", "block");
-        var t1 = setTimeout("$('.tipIcon').trigger('click')", 1000);
-        $('.tipIcon').trigger('click');
+        $(".seimg").fadeOut("slow");
+        $(ni).fadeIn(1000);
     }
 
 

@@ -27,7 +27,7 @@ html, body, #container {
 }
 body > #container {
 	height: auto; 
-	min-height: 600px; 
+	min-height: 600px;          /*页面高度*/
 }
 div#container {
     position:absolute;

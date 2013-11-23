@@ -81,6 +81,9 @@ ul li{
 .seimg {
     display:none;
 }
+#ContentPlaceHolder1_Image6{
+    display:block;
+}
 
 .main *{
 	/* Universal CSS reset */
@@ -212,3 +215,4 @@ p.tutInfo{
 }
 
 /*例句完*/
+
