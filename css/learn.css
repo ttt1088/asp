@@ -9,6 +9,7 @@
     float:left;
     top:80px;
     right:0;
+    left:800px;    
     width:550px;
     height:290px;
     position:absolute;
@@ -74,6 +75,14 @@ ul li{
 	margin-right: 10px;
 	background-color: #ffffff;
 	cursor: pointer;
+}
+.button1 {
+}
+
+.button2 {
+    position:absolute;
+    left:800px;
+    top: 386px;
 }
 
 /*例句*/

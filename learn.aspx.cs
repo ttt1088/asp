@@ -47,4 +47,8 @@ public partial class learn : System.Web.UI.Page
             Image5.ImageUrl = "~/img/05.jpg";
         }
     }
+    protected void Button2_Click(object sender, EventArgs e)
+    {
+
+    }
 }

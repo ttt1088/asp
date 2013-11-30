@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="learn.aspx.cs" Inherits="learn" %>
+﻿<%@ Page  StylesheetTheme="SkinFile" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="learn.aspx.cs" Inherits="learn" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
@@ -20,6 +20,7 @@ div#container {
     height:100%;
     width:100%;
 }
+
 </style>
     <div id="learn">
 	<div id="marquee">
@@ -37,13 +38,14 @@ div#container {
 		<div class='pre-next pre'></div>
     </div><br />
     <div id="change">
-        <asp:Button ID="Button1" runat="server" Text="Button" OnClick="Button1_Click"/>
+        <asp:Button ID="Button1" runat="server" Text="Try another group of words   尝试另一组单词" OnClick="Button1_Click" CssClass="button1" SkinID="learnbt" />
+        <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Add a new word for us   为我们添加单词" CssClass="button2" PostBackUrl="~/addwords.aspx"  SkinID="learnbt" />
     </div>
     </div>
     <div id="learnse">
         <div class="main">
             
-        <p class="se" title="Example Sentence例句" >
+        <p class="se" title="Example Sentence  例句" >
             <asp:Image ID="Image6" runat="server" ImageUrl="~/img/se-01.jpg" CssClass="seimg"/>
             <asp:Image ID="Image7" runat="server" ImageUrl="~/img/se-02.jpg" CssClass="seimg"/>
             <asp:Image ID="Image8" runat="server" ImageUrl="~/img/se-03.jpg" CssClass="seimg"/>
