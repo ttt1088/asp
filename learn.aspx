@@ -38,8 +38,8 @@ div#container {
 		<div class='pre-next pre'></div>
     </div><br />
     <div id="change">
-        <asp:Button ID="Button1" runat="server" Text="Try another group of words   尝试另一组单词" OnClick="Button1_Click" CssClass="button1" SkinID="learnbt" />
-        <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Add a new word for us   为我们添加单词" CssClass="button2" PostBackUrl="~/addwords.aspx"  SkinID="learnbt" />
+        <asp:Button ID="Button1" runat="server" Text="Try another group of words    尝试另一组单词" OnClick="Button1_Click" CssClass="button1" SkinID="learnbt"  Width="650px" />
+        <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Add a new word for us   为我们添加单词" CssClass="button2" PostBackUrl="~/addwords.aspx"  SkinID="learnbt" Width="520px" />
     </div>
     </div>
     <div id="learnse">
