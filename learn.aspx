@@ -1,4 +1,4 @@
-﻿<%@ Page  StylesheetTheme="SkinFile" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="learn.aspx.cs" Inherits="learn" %>
+﻿      <%@ Page  StylesheetTheme="SkinFile" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="learn.aspx.cs" Inherits="learn" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
@@ -38,8 +38,8 @@ div#container {
 		<div class='pre-next pre'></div>
     </div><br />
     <div id="change">
-        <asp:Button ID="Button1" runat="server" Text="Try another group of words    尝试另一组单词" OnClick="Button1_Click" CssClass="button1" SkinID="learnbt"  Width="650px" />
-        <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Add a new word for us   为我们添加单词" CssClass="button2" PostBackUrl="~/addwords.aspx"  SkinID="learnbt" Width="520px" />
+        <asp:LinkButton ID="Button1" runat="server" Text="Try another group of words    尝试另一组单词" OnClick="Button1_Click" CssClass="button1"   Width="700px"  BorderStyle="None" SkinID="learnbt" />
+        <asp:LinkButton ID="Button2" runat="server" OnClick="Button2_Click" Text="Add a new word for us   为我们添加单词" CssClass="button2" PostBackUrl="~/addwords.aspx"   Width="525px" BorderStyle="None" SkinID="learnbt"/>
     </div>
     </div>
     <div id="learnse">

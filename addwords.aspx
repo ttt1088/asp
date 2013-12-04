@@ -6,12 +6,19 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <br /><br /><br /><br />
-    
-    <asp:TextBox ID="TextBox1" runat="server" CssClass="textbox1" Width="500px"></asp:TextBox>
-    <asp:TextBox ID="TextBox2" runat="server" Height="50px" Width="200px"></asp:TextBox>
-    <asp:TextBox ID="TextBox3" runat="server" Height="50px" Width="200px"></asp:TextBox>
-    <asp:TextBox ID="TextBox4" runat="server" Height="50px" Width="200px"></asp:TextBox>
-    <asp:TextBox ID="TextBox5" runat="server" Height="50px" Width="200px"></asp:TextBox>
+    <asp:Label ID="Label2" runat="server" Text="请输入汉字:" CssClass="character" font-Bold="True" Font-Italic="False" Font-Size="Larger"></asp:Label>
+    <asp:TextBox ID="TextBox1" runat="server" CssClass="textbox1" Width="350px" BorderStyle="Solid"></asp:TextBox>
+    <asp:TextBox ID="TextBox2" runat="server" CssClass="textbox2" Width="350px" BorderStyle="Solid"></asp:TextBox>
+     &nbsp;&nbsp;
+    <asp:FileUpload ID="FileUpload1" runat="server" Height="19px" Width="201px" />
+    <asp:Button ID="Button2" runat="server" Text="Button" />
+     <br /> <br /> <br />
+    <asp:Label ID="Label4" runat="server" Text="请输入例句:" CssClass="character" font-Bold="True" Font-Italic="False" Font-Size="Larger"></asp:Label>
+    <asp:TextBox ID="TextBox3" runat="server" CssClass="textbox1" Width="350px" BorderStyle="Solid"></asp:TextBox><br /><br /><br />
+    <asp:Label ID="Label5" runat="server" Text="请输入英文:" CssClass="character" font-Bold="True" Font-Italic="False" Font-Size="Larger"></asp:Label>
+    <asp:TextBox ID="TextBox4" runat="server" CssClass="textbox1" Width="350px" BorderStyle="Solid"></asp:TextBox>
+     <br /><br /><br /><asp:Label ID="Label3" runat="server" Text="请输入名字:" CssClass="character" font-Bold="True" Font-Italic="False" Font-Size="Larger"></asp:Label>
+    <asp:TextBox ID="TextBox5" runat="server" CssClass="textbox1" Width="350px" BorderStyle="Solid"></asp:TextBox>
     <br />
     <asp:Button ID="Button1" runat="server" Height="30px" OnClick="Button1_Click" Text="Button" Width="102px" />
     <asp:XmlDataSource ID="XmlDataSource1" runat="server" DataFile="~/XMLFile.xml" OnTransforming="XmlDataSource1_Transforming"></asp:XmlDataSource>

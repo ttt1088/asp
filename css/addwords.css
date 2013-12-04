@@ -1,9 +1,28 @@
 ﻿body {
 }
-.textbox1 {
-    width: 200px;
-    height: 50px;
-    border-color: green;
-    border-radius: 10px;
+.textbox {
+    float:left;
 }
+.textbox1 {
+    width: 80px;
+    height: 50px;
+    border-color:tomato;
+    border-width:4px;
+    margin-left:20px;
+}
+.textbox2 {
+     width: 80px;
+    height: 50px;
+    border-color: tomato;
+    border-width: 4px;
+    margin-left: 320px;
+}
+.character {
+    color: green;
+    font-family: 幼圆;
+    margin-left:20px;
+}
+
+
+
 

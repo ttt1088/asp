@@ -11,4 +11,4 @@
 
 <asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
 --%>
-<asp:Button  runat="server" SkinId="learnbt" BackColor="White" BorderColor="Gray" BorderStyle="Outset" Font-Bold="True" Font-Names="迷你简汉真广标" Font-Size="15pt" ForeColor="#F75A6F"  />
+<asp:LinkButton  runat="server" SkinId="learnbt" Font-Bold="True" Font-Names="迷你简汉真广标" Font-Size="15pt" ForeColor="#F75A6F"  />

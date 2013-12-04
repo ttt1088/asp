@@ -8,7 +8,8 @@ public partial class learn : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        this.Button1.CausesValidation = false;
+
+//        this.Button1.CausesValidation = false;
         if (Session["imggroup"] == null)
         {
             Random rnd = new Random();
