@@ -13,7 +13,7 @@ public partial class learn : System.Web.UI.Page
         if (Session["imggroup"] == null)
         {
             Random rnd = new Random();
-            int n = rnd.Next(1, 3);
+            int n = rnd.Next(1, 4);
             Session["imggroup"] = n.ToString();
         }
         SetImage();
@@ -24,7 +24,7 @@ public partial class learn : System.Web.UI.Page
         do
         {
             Random rnd = new Random();
-            int n = rnd.Next(1, 3);
+            int n = rnd.Next(1, 4);
             Session["imggroup"] = n.ToString();
         } while (Session["imggroup"].ToString() == a);
         SetImage();
@@ -46,6 +46,14 @@ public partial class learn : System.Web.UI.Page
             Image3.ImageUrl = "~/img/03.jpg";
             Image4.ImageUrl = "~/img/04.jpg";
             Image5.ImageUrl = "~/img/05.jpg";
+        }
+        if (Session["imggroup"].ToString() == "3")
+        {
+            Image1.ImageUrl = "~/img/season.jpg";
+            Image2.ImageUrl = "~/img/spring.jpg";
+            Image3.ImageUrl = "~/img/summer.jpg";
+            Image4.ImageUrl = "~/img/autumn.jpg";
+            Image5.ImageUrl = "~/img/winter.jpg";
         }
     }
     protected void Button2_Click(object sender, EventArgs e)

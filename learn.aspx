@@ -130,7 +130,7 @@ div#container {
         //}
     });
     function sentence(index) {
-        var ni = "#ContentPlaceHolder1_Image" + (index + 6).toString();
+        var ni = "#ctl00_ContentPlaceHolder1_Image" + (index + 6).toString();
         $(".seimg").css("display", "none");
         $(".seimg").fadeOut("slow");
         $(ni).fadeIn(1000);
