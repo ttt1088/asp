@@ -128,6 +128,12 @@ div#container {
         //    var t1 = setTimeout("$('.tipIcon').trigger('click')", 1000);
         //    $('.tipIcon').trigger('click');
         //}
+        $(".button1,.button2").hover(function () {
+            $(this).stop(true, false).animate({ "opacity": 1 }, 300);
+        }, function () {
+            $(this).stop(true, false).animate({ "opacity": 0.7 }, 300);
+        });
+
     });
     function sentence(index) {
         var ni = "#ctl00_ContentPlaceHolder1_Image" + (index + 6).toString();

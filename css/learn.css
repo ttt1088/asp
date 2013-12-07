@@ -77,7 +77,7 @@ ul li{
 	cursor: pointer;
 }
 .button1 {
-    background-color:white;
+    background-color:#F4FC79;
     text-decoration: none;
     text-align:center;
     filter:alpha(opacity=70);  
@@ -85,33 +85,33 @@ ul li{
     -khtml-opacity: 0.7;  
     opacity: 0.7;      
 }
-.button1:hover {
+/*.button1:hover {
     background-color:#DDDDDD;
     filter:alpha(opacity=100);  
     -moz-opacity:1;  
     -khtml-opacity: 1;  
     opacity: 1;  
-}
+}*/
 
 .button2 {
     position:absolute;
     left:800px;
     top: 386px;
-    background-color:white;
+    background-color:#F4FC79;
     text-decoration: none;
     text-align:center;
     filter:alpha(opacity=70);  
     -moz-opacity:0.7;  
     -khtml-opacity: 0.7;  
-    opacity: 0.7; 
+    opacity: 0.5; 
 }
-.button2:hover {
+/*.button2:hover {
     background-color:#DDDDDD;
     filter:alpha(opacity=100);  
     -moz-opacity:1;  
     -khtml-opacity: 1;  
     opacity: 1;  
-}
+}*/
 
 
 /*例句*/
