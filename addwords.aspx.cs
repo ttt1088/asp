@@ -54,4 +54,10 @@ public partial class addwords : System.Web.UI.Page
        //     sqlHelper.ExecterNonQuery(query1);
        // }
    // }
+    protected void Button2_Click(object sender, EventArgs e)
+    {
+        string path = Server.MapPath("~/images/");
+        FileUpload1.PostedFile.SaveAs(path + FileUpload1.FileName);
+        Response.Write("<script>alert('上传成功');</script>");
+    }
 }

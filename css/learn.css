@@ -10,7 +10,7 @@
     top:80px;
     right:0;
     left:800px;    
-    width:550px;
+    width:540px;
     height:290px;
     position:absolute;
 }
@@ -77,7 +77,7 @@ ul li{
 	cursor: pointer;
 }
 .button1 {
-    background-color:#F4FC79;
+    background-color:#f9fda2;
     text-decoration: none;
     text-align:center;
     filter:alpha(opacity=70);  
@@ -97,7 +97,7 @@ ul li{
     position:absolute;
     left:800px;
     top: 386px;
-    background-color:#F4FC79;
+    background-color:#f9fda2;
     text-decoration: none;
     text-align:center;
     filter:alpha(opacity=70);  
@@ -233,7 +233,7 @@ ul li{
 .main{
 	height:200px;
 	position:relative;
-	width:550px;
+	width:500px;
 }
 
 .spaceBottom{
