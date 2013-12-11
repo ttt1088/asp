@@ -14,15 +14,15 @@
 <div id="container">
     <div id="title">
 	    <div id="login">
-    	    <a href="#">Login登录</a>
+    	    <a href="login.aspx"><asp:Label ID="Label1" runat="server" Text="Login登录"></asp:Label></a>
             |
-            <a href="#">Join us注册</a>
+            <a href="login.aspx"><asp:Label ID="Label2" runat="server" Text="Join us注册"></asp:Label></a>
         </div>
         <div id="logo"><a href="Default.aspx">
             <asp:Image ID="Image1" runat="server" ImageUrl="~/img/logo.png" /></a></div>
         <div id="search">
     	    <input type="textarea" id="sousuokuang"/>
-            <a href="#" id="sousuo">search搜索</a>
+            <a href="javascript:void(0)" id="sousuo">search搜索</a>
         </div>   
     </div>
 
