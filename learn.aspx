@@ -13,7 +13,7 @@
 
 body > #container {
     height: auto; 
-    min-height: 800px;          /*页面高度*/
+    min-height: 600px;          /*页面高度*/
 }
 div#container {
     position:absolute;
