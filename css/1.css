@@ -1,14 +1,14 @@
 ﻿
-@font-face{
+/*@font-face{
 	font-family:'fontNameRegular';
 	src:url(minihanzhenguangbiao.eot);
 	src:local('fontNameRegular'),
 		url('minihanzhenguangbiao.ttf') format('truetype');
-}
+}*/
 a {
 	color:#FFF;
-	font-family:"迷你简汉真广标";
-	font-weight:bold;
+	font-family: 'Microsoft YaHei UI';
+	font-weight:900;
 }
 a:active {
     background:none;    /*IE去除链接点击后背景色*/
@@ -66,6 +66,7 @@ div#login{
 div#neirong {
     position:absolute;
     top:130px;
+    width:100%;
     min-width:1340px;
     height:440px;
     background-color:white;

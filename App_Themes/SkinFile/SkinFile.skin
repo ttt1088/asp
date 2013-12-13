@@ -11,4 +11,4 @@
 
 <asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
 --%>
-<asp:LinkButton  runat="server" SkinId="learnbt" Font-Bold="True" Font-Names="迷你简汉真广标" Font-Size="15pt" ForeColor="#F75A6F"  />
+<asp:LinkButton  runat="server" SkinId="learnbt" Font-Bold="True" Font-Names="Microsoft YaHei UI" Font-Size="15pt" ForeColor="#F75A6F"  />

@@ -9,7 +9,7 @@
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-<style>
+    <style>
 
 body > #container {
     height: auto; 
@@ -38,8 +38,8 @@ div#container {
 		<div class='pre-next pre'></div>
     </div><br />
     <div id="change">
-        <asp:LinkButton ID="Button1" runat="server" Text="Try another group of words    尝试另一组单词" OnClick="Button1_Click" CssClass="button1"   Width="700px"  BorderStyle="None" SkinID="learnbt" />
-        <asp:LinkButton ID="Button2" runat="server" OnClick="Button2_Click" Text="Add a new word for us   为我们添加单词" CssClass="button2" PostBackUrl="~/addwords.aspx"   Width="525px" BorderStyle="None" SkinID="learnbt"/>
+        <asp:LinkButton ID="Button1" runat="server" Text="Try another group of words    尝试另一组单词" OnClick="Button1_Click" CssClass="button1"   Width="700px"  BorderStyle="None" SkinID="learnbt"  />
+        <asp:LinkButton ID="Button2" runat="server" OnClick="Button2_Click" Text="Add a new word for us   为我们添加单词" CssClass="button2" PostBackUrl="~/addwords.aspx"   Width="525px" BorderStyle="None" SkinID="learnbt" />
     </div>
     </div>
     <div id="learnse">
